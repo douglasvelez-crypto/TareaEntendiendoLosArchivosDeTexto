@@ -1,8 +1,6 @@
-module co.edu.univalle.EntendiendoTexto {
+module co.edu.univalle.EntendiendoTextos {
     requires javafx.controls;
-    requires javafx.fxml;
 
-    opens co.edu.univalle.EntendiendoTexto to javafx.fxml;
-    opens co.edu.univalle.EntendiendoTexto.modelo to org.junit.platform.commons;
-    exports co.edu.univalle.EntendiendoTexto;
+    exports co.edu.univalle.EntendiendoTextos;
+    opens co.edu.univalle.EntendiendoTextos.modelo to org.junit.platform.commons;
 }
