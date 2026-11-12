@@ -29,9 +29,6 @@ public class Repositorio {
 
     /**Para leer al jugador que se guarda*/
 
-    @throws java.io.FileNotFoundException
-    @throws IOException
-
     public Jugador cargar() throws IOException {
         try (BufferedReader lector = new BufferedReader(new FileReader(ruta, StandardCharsets.UTF_8))) {
             String nombre = lector.readLine();

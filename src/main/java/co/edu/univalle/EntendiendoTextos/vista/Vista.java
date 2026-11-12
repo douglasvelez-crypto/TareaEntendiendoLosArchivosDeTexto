@@ -12,11 +12,11 @@ import javafx.scene.layout.VBox;
 /** Este clase es solo para mostrar
  los elementos de la interfaz y conectarlos a los botones*/
 
-public class Vista extends Vbox{
+public class Vista extends VBox{
     private final TextField txtNombre = new TextField();
     private final TextField txtPuntaje = new TextField();
     private final Button btnGuardar = new Button("Guardar");
-    private final Button btnCargar = new button("Cargar");
+    private final Button btnCargar = new Button("Cargar");
     private final Label lblMensaje = new Label();
 
     public Vista(){
@@ -35,7 +35,7 @@ public class Vista extends Vbox{
         lblMensaje.setWrapText(true);
 
         setSpacing(15);
-        setpadding(new Insets(20));
+        setPadding(new Insets(20));
         getChildren().addAll(campos, botones, lblMensaje);
     }
 
@@ -56,6 +56,7 @@ public class Vista extends Vbox{
     }
     public void mostrarMensaje(String texto, boolean esError){
         lblMensaje.setStyle(esError ? "-fx-text-fill: red;" : "-fx-text-fill: green;");
+        lblMensaje.setText(texto);
         lblMensaje.setText(texto);
     }
 }

@@ -9,9 +9,9 @@ import java.io.IOException;
 
 public class Controlador{
     private final Vista vista;
-    private final Repositorio;
+    private final Repositorio repositorio;
 
-    public Controlador{
+    public Controlador (Vista vista, Repositorio repositorio){
         this.vista = vista;
         this.repositorio = repositorio;
 
@@ -24,7 +24,7 @@ public class Controlador{
         String puntajeTexto = vista.getTxtPuntaje().getText().trim();
 
         if(nombre.isEmpty()){
-            vista,mostrarMensaje("El nombre no puede estar vacio.", true);
+            vista.mostrarMensaje("El nombre no puede estar vacio.", true);
             return;
         }
         if(puntajeTexto.isEmpty()){
@@ -46,8 +46,8 @@ public class Controlador{
         try {
             repositorio.guardar(new Jugador(nombre, puntaje));
             vista.mostrarMensaje("Datos guardados correctamente.",false);
-        } catch(IOException){
-            vista.mostrarMensaje("Error al guardar l archivo" + ex.getMessage(), true);
+        } catch (IOException ex){
+            vista.mostrarMensaje("Error al guardar el archivo" + ex.getMessage(), true);
         }
     }
     private void cargar(){
