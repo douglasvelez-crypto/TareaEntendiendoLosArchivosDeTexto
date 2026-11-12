@@ -13,14 +13,15 @@ Tarea propuesta por la profesora Paola Johanna Rodriguez, realizada por Douglas 
 3. Pido ayuda con la conexion de los botones en la clase vista para lo que claude me recomeinda usar un extend Vbox en la clase y luego definir cada boton por separado.
 4. Claude me recomienda utilizar excepciones para poder evitar los errores de entrada y salida en el codigo, ya que los errores se pueden presentar en multiples circunstancias, pongo las excepciones en COntrolador y Repositorio.
 5.Le pido a Claude que me ayude con el archivo de pruebas para poder realizar las comprobaciones requeridas por la profesora.
-##Pruebas con el programa.
-#El archivo guarda correctamente, y el txt se mantiene.
+
+## Pruebas con el programa.
+# El archivo guarda correctamente, y el txt se mantiene.
 ![img_1.png](img_1.png)
-#El archivo se carga correctamente, y el txt se mantiene.
+# El archivo se carga correctamente, y el txt se mantiene.
 ![img.png](img.png)
-#El archivo txt esta en la razi del proyecto.
+# El archivo txt esta en la razi del proyecto.
 ![img_2.png](img_2.png)
-#Prueba de errores(Puntaje vacio,nombre vacio,abc,numero negativo).
+# Prueba de errores(Puntaje vacio,nombre vacio,abc,numero negativo).
 ![img_3.png](img_3.png)![img_4.png](img_4.png)![img_5.png](img_5.png)![img_6.png](img_6.png)
-##Archivo RepositorioTest con las pruebas en JUnit.
+## Archivo RepositorioTest con las pruebas en JUnit.
 ![img_7.png](img_7.png)![img_8.png](img_8.png)
