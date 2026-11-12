@@ -8,3 +8,4 @@ Tarea propuesta por la profesora Paola Johanna Rodriguez, realizada por Douglas 
 1. Le pido a Claude que em ayude con la estructura base, el module-info y el pom.xml
 2. En el Controlador no me queda claro como hacer la conexion con la vista, le pido ayuda a claude y me recomienda usar las funciones getBtnGuardar y getBtnCargar.
 3. Pido ayuda con la conexion de los botones en la clase vista para lo que claude me recomeinda usar un extend Vbox en la clase y luego definir cada boton por separado.
+4. Claude me recomienda utilizar excepciones para poder evitar los errores de entrada y salida en el codigo, ya que los errores se pueden presentar en multiples circunstancias, pongo las excepciones en COntrolador y Repositorio.
